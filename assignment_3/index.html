@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Submission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Project Submission</h1>
+    <p class="subtitle">Cloud Computing & Disaster Recovery</p>
+
+    <form id="projectForm">
+        <div class="input-group">
+            <label>Student Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-group">
+            <label>Project Title</label>
+            <input type="text" id="title" placeholder="Enter project title" required>
+        </div>
+
+        <div class="input-group">
+            <label>Domain</label>
+            <select id="domain" required>
+                <option value="">Select domain</option>
+                <option>Cloud Computing</option>
+                <option>Disaster Recovery</option>
+                <option>AI & ML</option>
+                <option>Cybersecurity</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Project Description</label>
+            <textarea id="description" rows="4" placeholder="Brief description of your project" required></textarea>
+        </div>
+
+        <div class="input-group">
+            <label>GitHub Repository Link</label>
+            <input type="url" id="github" placeholder="https://github.com/username/repo">
+        </div>
+
+        <button type="submit">Submit Project</button>
+    </form>
+
+    <p id="message"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
